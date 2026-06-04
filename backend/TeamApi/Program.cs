@@ -11,9 +11,9 @@ app.UseCors();
 
 var team = new[]
 {
-    new { name = "Иванов Иван", role = "Tech Lead", fact = "Люблю C#" },
-    new { name = "Петрова Мария", role = "Developer", fact = "Пишу на C# с 1 курса" },
-    new { name = "Сидоров Алексей", role = "QA", fact = "Нахожу баги быстрее всех" },
+    new { name = "Наумов Леонтий", role = "Tech Lead", fact = "Люблю C#" },
+    new { name = "Наумов Леонтий", role = "Developer", fact = "Пишу на C# с 1 курса" },
+    new { name = "Наумов Леонтий", role = "QA", fact = "Нахожу баги быстрее всех" },
 };
 
 app.MapGet("/api/team", () => Results.Ok(team));
