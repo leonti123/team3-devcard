@@ -27,4 +27,11 @@ app.MapGet("/api/team/{name}", (string name) =>
         : Results.NotFound(new { error = "Участник не найден" });
 });
 
+app.MapGet("/api/ping", () => Results.Ok(new
+{
+    status = "ok",
+    time = DateTime.Now.ToString("HH:mm:ss"),
+    team = "team3-devcard"
+}));
+
 app.Run();
